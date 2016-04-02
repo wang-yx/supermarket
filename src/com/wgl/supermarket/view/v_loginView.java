@@ -122,5 +122,6 @@ public class v_loginView {
 		frame.getContentPane().add(jbn_reset, gbc_jbn_reset);
 		
 		
+		
 	}
 }
