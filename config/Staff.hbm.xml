@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wgl.supermarket.domain.Staff" table="tb_staff">
+		<id name="id" column="id" type="java.lang.Integer" length="10">
+			<generator class="increment"/>
+		</id>
+		<property name="username" column="username" type="java.lang.String" length="20"/>
+		<property name="password" column="password" type="java.lang.String" length="20"/>
+		<property name="name" column="name" type="java.lang.String" length="20"/>
+		<property name="warehoseid" column="warehoseid" type="java.lang.Integer" length="10"/>
+	</class>
+</hibernate-mapping>

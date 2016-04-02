@@ -1,2 +1,14 @@
 /Goods.hbm.xml
 /com/
+/Goodcategorys.hbm.xml
+/snippet/
+/Goodsnum.hbm.xml
+/Power.hbm.xml
+/Provider.hbm.xml
+/Purchasebillinfo.hbm.xml
+/Role.hbm.xml
+/Rolepower.hbm.xml
+/Sellbillinfo.hbm.xml
+/Staff.hbm.xml
+/Staffrole.hbm.xml
+/Warehose.hbm.xml

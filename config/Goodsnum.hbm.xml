@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wgl.supermarket.domain.Goodsnum" table="tb_goodsnum">
+		<id name="id" column="id" type="java.lang.Integer" length="10">
+			<generator class="increment"/>
+		</id>
+		<property name="number" column="number" type="java.lang.Integer" length="4"/>
+		<property name="purchasecode" column="purchasecode" type="java.lang.String" length="10"/>
+		<property name="productdate" column="productdate" type="java.lang.Date" />
+		<property name="firstchecknum" column="firstchecknum" type="java.lang.Integer" length="10"/>
+		<property name="firstcheckdate" column="firstcheckdate" type="java.lang.Date"/>
+		<property name="firstcheckman" column="firstcheckman" type="java.lang.String" length="10"/>
+		<property name="secchecknum" column="secchecknum" type="java.lang.Integer" length="10"/>
+		<property name="seccheckdate" column="seccheckdate" type="java.lang.Date"/>
+		<property name="seccheckman" column="seccheckman" type="java.lang.String" length="10"/>
+		<property name="finalnum" column="finalnum" type="java.lang.Integer" length="10"/>
+		<property name="discountrate" column="discountrate" type="java.lang.Double" length="6"/>
+		<property name="buyprice" column="buyprice" type="java.lang.Double" length="10"/>
+		<property name="secondprice" column="secondprice" type="java.lang.Double" length="10"/>
+		<property name="sellprice" column="sellprice" type="java.lang.Double" length="10"/>
+		<property name="warehouseid" column="warehouseid" type="java.lang.Integer" length="10"/>
+		<property name="goodsid" column="goodsid" type="java.lang.Integer" length="10"/>
+	</class>
+</hibernate-mapping>
