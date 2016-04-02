@@ -2872,3 +2872,203 @@ Caused by: org.hibernate.SessionException: Session is closed
 [INFO][2016-03-22 22:38:41,423][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
 [INFO][2016-03-22 22:38:41,423][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
 [INFO][2016-03-22 22:38:41,500][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@190ef12] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-02 11:43:19,009][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-02 11:43:19,041][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-02 11:43:19,057][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-02 11:43:19,065][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-02 11:43:19,183][org.hibernate.cfg.Configuration]configuring from resource: hibernate.cfg.xml
+[INFO][2016-04-02 11:43:19,183][org.hibernate.cfg.Configuration]Configuration resource: hibernate.cfg.xml
+[INFO][2016-04-02 11:43:19,484][org.hibernate.cfg.Configuration]Reading mappings from resource : Customer.hbm.xml
+[INFO][2016-04-02 11:43:19,605][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.domain.Customer -> tb_customer
+[INFO][2016-04-02 11:43:19,629][org.hibernate.cfg.Configuration]Configured SessionFactory: null
+[INFO][2016-04-02 11:43:19,758][org.hibernate.connection.DriverManagerConnectionProvider]Using Hibernate built-in connection pool (not for production use!)
+[INFO][2016-04-02 11:43:19,758][org.hibernate.connection.DriverManagerConnectionProvider]Hibernate connection pool size: 20
+[INFO][2016-04-02 11:43:19,758][org.hibernate.connection.DriverManagerConnectionProvider]autocommit mode: false
+[INFO][2016-04-02 11:43:19,825][org.hibernate.connection.DriverManagerConnectionProvider]using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql:///supermarket
+[INFO][2016-04-02 11:43:19,826][org.hibernate.connection.DriverManagerConnectionProvider]connection properties: {user=root, password=****}
+[WARN][2016-04-02 11:43:20,212][org.hibernate.cfg.SettingsFactory]Could not obtain connection metadata
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:910)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3923)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1273)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2031)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:111)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2101)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1325)
+	at com.wgl.supermarket.test.TestHiberbate.setUp(TestHiberbate.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:69)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+[INFO][2016-04-02 11:43:20,279][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-02 11:43:20,285][org.hibernate.transaction.TransactionFactoryFactory]Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-04-02 11:43:20,288][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2016-04-02 11:43:20,288][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2016-04-02 11:43:20,288][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2016-04-02 11:43:20,289][org.hibernate.cfg.SettingsFactory]Scrollable result sets: disabled
+[INFO][2016-04-02 11:43:20,289][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): disabled
+[INFO][2016-04-02 11:43:20,289][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2016-04-02 11:43:20,290][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2016-04-02 11:43:20,290][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2016-04-02 11:43:20,290][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2016-04-02 11:43:20,291][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2016-04-02 11:43:20,291][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2016-04-02 11:43:20,291][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2016-04-02 11:43:20,293][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2016-04-02 11:43:20,293][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2016-04-02 11:43:20,293][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2016-04-02 11:43:20,293][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2016-04-02 11:43:20,294][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2016-04-02 11:43:20,294][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2016-04-02 11:43:20,294][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2016-04-02 11:43:20,294][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2016-04-02 11:43:20,299][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2016-04-02 11:43:20,300][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2016-04-02 11:43:20,300][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2016-04-02 11:43:20,300][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2016-04-02 11:43:20,300][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2016-04-02 11:43:20,397][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2016-04-02 11:43:20,718][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2016-04-02 11:43:20,726][org.hibernate.tool.hbm2ddl.SchemaUpdate]Running hbm2ddl schema update
+[INFO][2016-04-02 11:43:20,726][org.hibernate.tool.hbm2ddl.SchemaUpdate]fetching database metadata
+[ERROR][2016-04-02 11:43:20,733][org.hibernate.tool.hbm2ddl.SchemaUpdate]could not get database metadata
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:910)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3923)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1273)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2031)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:168)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:346)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1327)
+	at com.wgl.supermarket.test.TestHiberbate.setUp(TestHiberbate.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:69)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+[ERROR][2016-04-02 11:43:20,735][org.hibernate.tool.hbm2ddl.SchemaUpdate]could not complete schema update
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:910)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3923)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1273)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2031)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:168)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:346)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1327)
+	at com.wgl.supermarket.test.TestHiberbate.setUp(TestHiberbate.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:69)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+[WARN][2016-04-02 11:43:20,989][org.hibernate.util.JDBCExceptionReporter]SQL Error: 1045, SQLState: 28000
+[ERROR][2016-04-02 11:43:20,989][org.hibernate.util.JDBCExceptionReporter]Access denied for user 'root'@'localhost' (using password: YES)
+[INFO][2016-04-02 11:46:09,399][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@8807e25: display name [org.springframework.context.support.ClassPathXmlApplicationContext@8807e25]; startup date [Sat Apr 02 11:46:09 CST 2016]; root of context hierarchy
+[INFO][2016-04-02 11:46:09,549][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-02 11:47:12,716][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@8807e25: display name [org.springframework.context.support.ClassPathXmlApplicationContext@8807e25]; startup date [Sat Apr 02 11:47:12 CST 2016]; root of context hierarchy
+[INFO][2016-04-02 11:47:12,840][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]

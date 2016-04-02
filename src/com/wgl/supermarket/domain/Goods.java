@@ -5,20 +5,20 @@ import java.io.Serializable;
 public class Goods implements Serializable {
 	private static final long serialVersionUID = -7668124343209297642L;
 	
-	private int id;
-	private String goodsname;
-	private String produceplace;
-	private String size;
-	private String goodspackage;
-	private String productcode;
-	private String promitcode;
-	private int available;
-	private int shelflife;
-	private String shelflifeunit;
-	private String barcode;
-	private String description;
-	private int providerid;
-	private int categoryid;
+	private int id;                  //商品id
+	private String goodsname;        //商品名称
+	private String produceplace;     //产地
+	private String size;             //规格
+	private String goodspackage;     //包装
+	private String productcode;      //生产批号
+	private String promitcode;       //批准文号
+	private int available;           //状态
+	private int shelflife;           //保质期
+	private String shelflifeunit;    //保质期单位
+	private String barcode;          //条形码
+	private String description;      //商品描述
+	private int providerid;          //供应商id（外键）
+	private int categoryid;          //商品类别id（外键）
 	
 	public int getId() {
 		return id;
@@ -103,9 +103,6 @@ public class Goods implements Serializable {
 	}
 	public void setCategoryid(int categoryid) {
 		this.categoryid = categoryid;
-	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
 	}
 	
 	

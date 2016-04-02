@@ -2,29 +2,37 @@ package com.wgl.supermarket.domain;
 
 import java.io.Serializable;
 
-public class Customer implements Serializable {
+public class Provider implements Serializable {
 	private static final long serialVersionUID = -7668124343209297642L;
-	private int id;                   //客户id
-	private String customerName;      //客户全称
-	private String zip;               //客户邮编
-	private String address;           //客户公司地址
-	private String telephone;         //客户公司电话
-	private String connectionPerson;  //联系人
-	private String phone;             //联系电话
-	private String email;             //联系人信箱
-	private int available;            //状态
-	
+	//供应商id
+	private int id;
+	//供应商全称
+	private String providername;
+	//供应商邮编
+	private String zip;
+	//供应商公司地址
+	private String address;
+	//供应商公司电话
+	private String telephone;
+	//联系人
+	private String connectionPerson;
+	//联系人电话
+	private String phone;
+	//联系人邮箱
+	private String email;
+	//状态
+	private int available;
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getCustomerName() {
-		return customerName;
+	public String getProvidername() {
+		return providername;
 	}
-	public void setCustomerName(String customerName) {
-		this.customerName = customerName;
+	public void setProvidername(String providername) {
+		this.providername = providername;
 	}
 	public String getZip() {
 		return zip;
@@ -68,6 +76,12 @@ public class Customer implements Serializable {
 	public void setAvailable(int available) {
 		this.available = available;
 	}
+	
+	
+	
+	
+	
+	/*
 	@Override
 	public String toString() {
 		return "Customer [id=" + id + ", customerName=" + customerName
@@ -75,5 +89,5 @@ public class Customer implements Serializable {
 				+ telephone + ", connectionPerson=" + connectionPerson
 				+ ", phone=" + phone + ", email=" + email + ", available="
 				+ available + "]";
-	}
+	}*/
 }
