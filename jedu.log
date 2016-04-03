@@ -3327,3 +3327,117 @@ java.sql.SQLException: Access denied for user 'admin'@'localhost' (using passwor
 [INFO][2016-04-02 22:23:21,849][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
 [INFO][2016-04-02 22:23:21,850][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
 [INFO][2016-04-02 22:23:21,850][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
+[INFO][2016-04-03 18:40:50,342][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@567d299b: display name [org.springframework.context.support.ClassPathXmlApplicationContext@567d299b]; startup date [Sun Apr 03 18:40:50 CST 2016]; root of context hierarchy
+[INFO][2016-04-03 18:40:50,570][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-03 18:40:51,308][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-03 18:40:51,347][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-03 18:40:51,370][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-03 18:40:51,408][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-03 18:40:51,586][org.hibernate.cfg.Configuration]configuring from resource: hibernate.cfg.xml
+[INFO][2016-04-03 18:40:51,587][org.hibernate.cfg.Configuration]Configuration resource: hibernate.cfg.xml
+[INFO][2016-04-03 18:40:51,813][org.hibernate.cfg.Configuration]Reading mappings from resource : Customer.hbm.xml
+[INFO][2016-04-03 18:40:52,106][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.domain.Customer -> tb_customer
+[INFO][2016-04-03 18:40:52,124][org.hibernate.cfg.Configuration]Configured SessionFactory: null
+[INFO][2016-04-03 18:40:52,518][org.hibernate.connection.DriverManagerConnectionProvider]Using Hibernate built-in connection pool (not for production use!)
+[INFO][2016-04-03 18:40:52,520][org.hibernate.connection.DriverManagerConnectionProvider]Hibernate connection pool size: 20
+[INFO][2016-04-03 18:40:52,520][org.hibernate.connection.DriverManagerConnectionProvider]autocommit mode: false
+[INFO][2016-04-03 18:40:52,553][org.hibernate.connection.DriverManagerConnectionProvider]using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql:///supermarket
+[INFO][2016-04-03 18:40:52,554][org.hibernate.connection.DriverManagerConnectionProvider]connection properties: {user=root, password=****}
+[INFO][2016-04-03 18:40:53,666][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.5.45
+[INFO][2016-04-03 18:40:53,666][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+[INFO][2016-04-03 18:40:53,709][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-03 18:40:53,716][org.hibernate.transaction.TransactionFactoryFactory]Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-04-03 18:40:53,718][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2016-04-03 18:40:53,719][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2016-04-03 18:40:53,719][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2016-04-03 18:40:53,719][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2016-04-03 18:40:53,719][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2016-04-03 18:40:53,720][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2016-04-03 18:40:53,720][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2016-04-03 18:40:53,720][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2016-04-03 18:40:53,721][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2016-04-03 18:40:53,722][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2016-04-03 18:40:53,722][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2016-04-03 18:40:53,722][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2016-04-03 18:40:53,722][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2016-04-03 18:40:53,722][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2016-04-03 18:40:53,727][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2016-04-03 18:40:53,727][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2016-04-03 18:40:53,728][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2016-04-03 18:40:53,728][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2016-04-03 18:40:53,728][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2016-04-03 18:40:53,728][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2016-04-03 18:40:53,728][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2016-04-03 18:40:53,729][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2016-04-03 18:40:53,734][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2016-04-03 18:40:53,735][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2016-04-03 18:40:53,735][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2016-04-03 18:40:53,736][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2016-04-03 18:40:53,736][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2016-04-03 18:40:53,943][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2016-04-03 18:40:54,553][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2016-04-03 18:40:54,573][org.hibernate.tool.hbm2ddl.SchemaUpdate]Running hbm2ddl schema update
+[INFO][2016-04-03 18:40:54,573][org.hibernate.tool.hbm2ddl.SchemaUpdate]fetching database metadata
+[INFO][2016-04-03 18:40:54,575][org.hibernate.tool.hbm2ddl.SchemaUpdate]updating schema
+[INFO][2016-04-03 18:40:54,644][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_customer
+[INFO][2016-04-03 18:40:54,645][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [zip, address, phone, available, telephone, id, connectionperson, customername, email]
+[INFO][2016-04-03 18:40:54,645][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-03 18:40:54,645][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-03 18:40:54,646][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
+[INFO][2016-04-03 18:55:26,535][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@567d299b: display name [org.springframework.context.support.ClassPathXmlApplicationContext@567d299b]; startup date [Sun Apr 03 18:55:26 CST 2016]; root of context hierarchy
+[INFO][2016-04-03 18:55:26,772][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-03 18:55:27,228][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-03 18:55:27,236][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-03 18:55:27,249][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-03 18:55:27,259][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-03 18:55:27,352][org.hibernate.cfg.Configuration]configuring from resource: hibernate.cfg.xml
+[INFO][2016-04-03 18:55:27,352][org.hibernate.cfg.Configuration]Configuration resource: hibernate.cfg.xml
+[INFO][2016-04-03 18:55:27,525][org.hibernate.cfg.Configuration]Reading mappings from resource : Customer.hbm.xml
+[INFO][2016-04-03 18:55:27,680][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.domain.Customer -> tb_customer
+[INFO][2016-04-03 18:55:27,706][org.hibernate.cfg.Configuration]Configured SessionFactory: null
+[INFO][2016-04-03 18:55:27,832][org.hibernate.connection.DriverManagerConnectionProvider]Using Hibernate built-in connection pool (not for production use!)
+[INFO][2016-04-03 18:55:27,832][org.hibernate.connection.DriverManagerConnectionProvider]Hibernate connection pool size: 20
+[INFO][2016-04-03 18:55:27,833][org.hibernate.connection.DriverManagerConnectionProvider]autocommit mode: false
+[INFO][2016-04-03 18:55:27,845][org.hibernate.connection.DriverManagerConnectionProvider]using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql:///supermarket
+[INFO][2016-04-03 18:55:27,848][org.hibernate.connection.DriverManagerConnectionProvider]connection properties: {user=root, password=****}
+[INFO][2016-04-03 18:55:28,507][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.5.45
+[INFO][2016-04-03 18:55:28,508][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+[INFO][2016-04-03 18:55:28,528][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-03 18:55:28,536][org.hibernate.transaction.TransactionFactoryFactory]Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-04-03 18:55:28,538][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2016-04-03 18:55:28,538][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2016-04-03 18:55:28,538][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2016-04-03 18:55:28,539][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2016-04-03 18:55:28,539][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2016-04-03 18:55:28,540][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2016-04-03 18:55:28,540][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2016-04-03 18:55:28,540][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2016-04-03 18:55:28,541][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2016-04-03 18:55:28,542][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2016-04-03 18:55:28,542][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2016-04-03 18:55:28,542][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2016-04-03 18:55:28,542][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2016-04-03 18:55:28,542][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2016-04-03 18:55:28,545][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2016-04-03 18:55:28,545][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2016-04-03 18:55:28,545][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2016-04-03 18:55:28,545][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2016-04-03 18:55:28,545][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2016-04-03 18:55:28,545][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2016-04-03 18:55:28,546][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2016-04-03 18:55:28,546][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2016-04-03 18:55:28,551][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2016-04-03 18:55:28,552][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2016-04-03 18:55:28,552][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2016-04-03 18:55:28,553][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2016-04-03 18:55:28,553][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2016-04-03 18:55:28,648][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2016-04-03 18:55:29,070][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2016-04-03 18:55:29,080][org.hibernate.tool.hbm2ddl.SchemaUpdate]Running hbm2ddl schema update
+[INFO][2016-04-03 18:55:29,080][org.hibernate.tool.hbm2ddl.SchemaUpdate]fetching database metadata
+[INFO][2016-04-03 18:55:29,082][org.hibernate.tool.hbm2ddl.SchemaUpdate]updating schema
+[INFO][2016-04-03 18:55:29,113][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_customer
+[INFO][2016-04-03 18:55:29,113][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [zip, address, phone, available, telephone, id, connectionperson, customername, email]
+[INFO][2016-04-03 18:55:29,113][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-03 18:55:29,113][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-03 18:55:29,114][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete

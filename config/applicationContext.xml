@@ -19,6 +19,18 @@
 		<property name="mappingLocations">
 			<list>
 				<value>Customer.hbm.xml</value>
+				<value>Goodcategorys.hbm.xml</value>
+				<value>Goods.hbm.xml</value>
+				<value>Goodsnum.hbm.xml</value>
+				<value>Power.hbm.xml</value>
+				<value>Provider.hbm.xml</value>
+				<value>Purchasebillinfo.hbm.xml</value>
+				<value>Role.hbm.xml</value>
+				<value>Rolepower.hbm.xml</value>
+				<value>Sellbillinfo.hbm.xml</value>
+				<value>Staff.hbm.xml</value>
+				<value>Staffrole.hbm.xml</value>
+				<value>Warehose.hbm.xml</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">
