@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="base/|sale/|user/|purchase/|warehouse/|log/|basicinfo/|view/" kind="src" path="src"/>
 	<classpathentry kind="src" path="config"/>
 	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="src" path="src/base"/>
+	<classpathentry kind="src" path="src/sale"/>
+	<classpathentry kind="src" path="src/user"/>
+	<classpathentry kind="src" path="src/purchase"/>
+	<classpathentry kind="src" path="src/warehouse"/>
+	<classpathentry kind="src" path="src/log"/>
+	<classpathentry kind="src" path="src/basicinfo"/>
+	<classpathentry kind="src" path="src/view"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="lib" path="lib/antlr-2.7.6.jar"/>
 	<classpathentry kind="lib" path="lib/aspectjrt.jar"/>
