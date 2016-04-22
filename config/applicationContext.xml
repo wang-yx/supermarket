@@ -7,7 +7,7 @@
 				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
 				http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
 	<context:property-placeholder location="classpath:db.properties"/>
-	<context:component-scan base-package="com.wgl.supermarket.test.dao.impl,com.wgl.supermarket.test.service.impl,com.wgl.supermarket.base.dao.impl,com.wgl.supermarket.customer.dao.impl,com.wgl.supermarket.customer.service.impl"/>
+	<context:component-scan base-package="com.wgl.supermarket"/>
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="${driverClassName}"/>
 		<property name="url" value="${url}"/>
@@ -18,6 +18,9 @@
 		<property name="dataSource" ref="dataSource"/>
 		<property name="mappingLocations">
 			<list>
+			
+				<value>classpath:com/wgl/supermarket/warehouse/domain/Goodsnum.hbm.xml</value>
+				<!--  
 				<value>Customer.hbm.xml</value>
 				<value>Goodcategorys.hbm.xml</value>
 				<value>Goods.hbm.xml</value>
@@ -31,6 +34,7 @@
 				<value>Staff.hbm.xml</value>
 				<value>Staffrole.hbm.xml</value>
 				<value>Warehose.hbm.xml</value>
+				-->
 			</list>
 		</property>
 		<property name="hibernateProperties">

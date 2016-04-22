@@ -3,7 +3,7 @@ package com.wgl.supermarket.view;
 import javax.swing.JFrame;
 import javax.swing.JTabbedPane;
 
-import com.wgl.supermarket.view.panel.User;
+//import com.wgl.supermarket.view.panel.User;
 
 public class StartInterface extends JFrame {
 	private static final long serialVersionUID = 1L;
@@ -42,13 +42,13 @@ public class StartInterface extends JFrame {
         
         setTitle("进销存管理系统");
         
-        tablePane.add(new User(), "用户管理");
-        tablePane.add(new User(), "库存管理");
-        tablePane.add(new User(), "销售管理");
-        tablePane.add(new User(), "仓库管理");
-        tablePane.add(new User(), "商品管理");
-        tablePane.add(new User(), "快捷查询");
-        getContentPane().add(tablePane);
+        //tablePane.add(new User(), "用户管理");
+        //tablePane.add(new User(), "库存管理");
+        //tablePane.add(new User(), "销售管理");
+        //tablePane.add(new User(), "仓库管理");
+        //tablePane.add(new User(), "商品管理");
+        //tablePane.add(new User(), "快捷查询");
+        //getContentPane().add(tablePane);
 	}
 	
 	public static void main(String[] args) {
