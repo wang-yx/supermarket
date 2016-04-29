@@ -20,6 +20,7 @@
 			<list>
 			
 				<value>classpath:com/wgl/supermarket/warehouse/domain/Goodsnum.hbm.xml</value>
+				<value>classpath:com/wgl/supermarket/purchase/domain/Purchasebillinfo.hbm.xml</value>
 				<!--  
 				<value>Customer.hbm.xml</value>
 				<value>Goodcategorys.hbm.xml</value>

@@ -5501,3 +5501,738 @@ java.sql.SQLException: Access denied for user 'admin'@'localhost' (using passwor
 [INFO][2016-04-22 13:03:23,398][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
 [INFO][2016-04-22 13:03:23,399][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
 [INFO][2016-04-22 13:03:23,568][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@1b6228bf] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-22 15:19:59,378][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6669d6db: display name [org.springframework.context.support.ClassPathXmlApplicationContext@6669d6db]; startup date [Fri Apr 22 15:19:59 CST 2016]; root of context hierarchy
+[INFO][2016-04-22 15:19:59,467][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-22 15:19:59,918][org.springframework.context.support.ClassPathXmlApplicationContext]Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@6669d6db]: org.springframework.beans.factory.support.DefaultListableBeanFactory@53ca0aa8
+[INFO][2016-04-22 15:19:59,969][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [db.properties]
+[INFO][2016-04-22 15:20:00,054][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@53ca0aa8: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDaoImpl,customerDao,customerService,testDao,testService,goodsnumDao,goodsnumService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+[INFO][2016-04-22 15:20:00,144][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-22 15:20:00,147][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-22 15:20:00,150][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-22 15:20:00,153][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-22 15:20:00,314][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.warehouse.domain.Goodsnum -> tb_goodsnum
+[INFO][2016-04-22 15:20:00,325][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2016-04-22 15:20:00,370][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2016-04-22 15:20:00,915][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.5.45
+[INFO][2016-04-22 15:20:00,915][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+[INFO][2016-04-22 15:20:00,925][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-22 15:20:00,927][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2016-04-22 15:20:00,927][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2016-04-22 15:20:00,928][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2016-04-22 15:20:00,928][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2016-04-22 15:20:00,928][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2016-04-22 15:20:00,928][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2016-04-22 15:20:00,928][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2016-04-22 15:20:00,929][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2016-04-22 15:20:00,929][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2016-04-22 15:20:00,929][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2016-04-22 15:20:00,929][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2016-04-22 15:20:00,929][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2016-04-22 15:20:00,929][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2016-04-22 15:20:00,929][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2016-04-22 15:20:00,930][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2016-04-22 15:20:00,931][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2016-04-22 15:20:00,931][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2016-04-22 15:20:00,931][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2016-04-22 15:20:00,931][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2016-04-22 15:20:00,931][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2016-04-22 15:20:00,931][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2016-04-22 15:20:00,932][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2016-04-22 15:20:00,932][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2016-04-22 15:20:00,935][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2016-04-22 15:20:00,935][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2016-04-22 15:20:00,935][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2016-04-22 15:20:00,935][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2016-04-22 15:20:00,936][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2016-04-22 15:20:00,967][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2016-04-22 15:20:01,096][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2016-04-22 15:20:01,108][org.hibernate.tool.hbm2ddl.SchemaUpdate]Running hbm2ddl schema update
+[INFO][2016-04-22 15:20:01,108][org.hibernate.tool.hbm2ddl.SchemaUpdate]fetching database metadata
+[INFO][2016-04-22 15:20:01,111][org.hibernate.tool.hbm2ddl.SchemaUpdate]updating schema
+[INFO][2016-04-22 15:20:03,185][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_goodsnum
+[INFO][2016-04-22 15:20:03,185][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [seccheckdate, productdate, firstchecknum, discountrate, firstcheckdate, number, secchecknum, id, purchasecode, warehouseid, seccheckman, goodsid, finalnum, buyprice, firstcheckman, sellprice, secondprice]
+[INFO][2016-04-22 15:20:03,185][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-22 15:20:03,186][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-22 15:20:03,186][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
+[INFO][2016-04-22 15:20:03,284][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@453857e1] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-22 15:21:16,369][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@69ae8935: display name [org.springframework.context.support.ClassPathXmlApplicationContext@69ae8935]; startup date [Fri Apr 22 15:21:16 CST 2016]; root of context hierarchy
+[INFO][2016-04-22 15:21:16,940][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-22 15:21:19,650][org.springframework.context.support.ClassPathXmlApplicationContext]Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@69ae8935]: org.springframework.beans.factory.support.DefaultListableBeanFactory@74a02b5e
+[INFO][2016-04-22 15:21:20,053][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [db.properties]
+[INFO][2016-04-22 15:21:20,656][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@74a02b5e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDaoImpl,customerDao,customerService,testDao,testService,goodsnumDao,goodsnumService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+[INFO][2016-04-22 15:21:21,561][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-22 15:21:21,592][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-22 15:21:21,609][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-22 15:21:21,687][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-22 15:21:22,639][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.warehouse.domain.Goodsnum -> tb_goodsnum
+[INFO][2016-04-22 15:21:22,701][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2016-04-22 15:21:23,159][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2016-04-22 15:21:25,591][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.5.45
+[INFO][2016-04-22 15:21:25,592][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+[INFO][2016-04-22 15:21:25,751][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-22 15:21:25,771][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2016-04-22 15:21:25,772][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2016-04-22 15:21:25,772][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2016-04-22 15:21:25,772][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2016-04-22 15:21:25,773][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2016-04-22 15:21:25,773][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2016-04-22 15:21:25,774][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2016-04-22 15:21:25,774][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2016-04-22 15:21:25,774][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2016-04-22 15:21:25,775][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2016-04-22 15:21:25,775][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2016-04-22 15:21:25,776][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2016-04-22 15:21:25,776][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2016-04-22 15:21:25,776][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2016-04-22 15:21:25,776][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2016-04-22 15:21:25,827][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2016-04-22 15:21:25,828][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2016-04-22 15:21:25,828][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2016-04-22 15:21:25,828][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2016-04-22 15:21:25,828][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2016-04-22 15:21:25,828][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2016-04-22 15:21:25,828][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2016-04-22 15:21:25,828][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2016-04-22 15:21:25,839][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2016-04-22 15:21:25,840][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2016-04-22 15:21:25,840][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2016-04-22 15:21:25,840][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2016-04-22 15:21:25,841][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2016-04-22 15:21:26,051][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2016-04-22 15:21:27,606][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2016-04-22 15:21:27,627][org.hibernate.tool.hbm2ddl.SchemaUpdate]Running hbm2ddl schema update
+[INFO][2016-04-22 15:21:27,628][org.hibernate.tool.hbm2ddl.SchemaUpdate]fetching database metadata
+[INFO][2016-04-22 15:21:27,644][org.hibernate.tool.hbm2ddl.SchemaUpdate]updating schema
+[INFO][2016-04-22 15:21:27,727][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_goodsnum
+[INFO][2016-04-22 15:21:27,728][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [seccheckdate, productdate, firstchecknum, discountrate, firstcheckdate, number, secchecknum, id, purchasecode, warehouseid, seccheckman, goodsid, finalnum, buyprice, firstcheckman, sellprice, secondprice]
+[INFO][2016-04-22 15:21:27,728][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-22 15:21:27,728][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-22 15:21:27,728][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
+[INFO][2016-04-22 15:21:28,417][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@13354259] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-25 22:22:48,757][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@35497537: display name [org.springframework.context.support.ClassPathXmlApplicationContext@35497537]; startup date [Mon Apr 25 22:22:48 CST 2016]; root of context hierarchy
+[INFO][2016-04-25 22:22:49,030][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-25 22:22:50,369][org.springframework.context.support.ClassPathXmlApplicationContext]Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@35497537]: org.springframework.beans.factory.support.DefaultListableBeanFactory@40b07205
+[INFO][2016-04-25 22:22:50,444][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [db.properties]
+[INFO][2016-04-25 22:22:50,532][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@40b07205: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDaoImpl,customerDao,customerService,testDao,testService,goodsnumDao,goodsnumService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+[INFO][2016-04-25 22:22:50,703][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-25 22:22:50,716][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-25 22:22:50,732][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-25 22:22:50,735][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-25 22:22:51,050][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.warehouse.domain.Goodsnum -> tb_goodsnum
+[INFO][2016-04-25 22:22:51,063][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2016-04-25 22:22:51,132][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2016-04-25 22:22:51,814][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.5.45
+[INFO][2016-04-25 22:22:51,814][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+[INFO][2016-04-25 22:22:51,876][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-25 22:22:51,880][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2016-04-25 22:22:51,880][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2016-04-25 22:22:51,880][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2016-04-25 22:22:51,880][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2016-04-25 22:22:51,881][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2016-04-25 22:22:51,881][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2016-04-25 22:22:51,881][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2016-04-25 22:22:51,881][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2016-04-25 22:22:51,881][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2016-04-25 22:22:51,882][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2016-04-25 22:22:51,882][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2016-04-25 22:22:51,882][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2016-04-25 22:22:51,882][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2016-04-25 22:22:51,882][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2016-04-25 22:22:51,882][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2016-04-25 22:22:51,892][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2016-04-25 22:22:51,892][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2016-04-25 22:22:51,892][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2016-04-25 22:22:51,892][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2016-04-25 22:22:51,892][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2016-04-25 22:22:51,892][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2016-04-25 22:22:51,892][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2016-04-25 22:22:51,892][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2016-04-25 22:22:51,904][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2016-04-25 22:22:51,905][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2016-04-25 22:22:51,905][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2016-04-25 22:22:51,905][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2016-04-25 22:22:51,905][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2016-04-25 22:22:52,017][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2016-04-25 22:22:52,269][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2016-04-25 22:22:52,274][org.hibernate.tool.hbm2ddl.SchemaUpdate]Running hbm2ddl schema update
+[INFO][2016-04-25 22:22:52,274][org.hibernate.tool.hbm2ddl.SchemaUpdate]fetching database metadata
+[INFO][2016-04-25 22:22:52,275][org.hibernate.tool.hbm2ddl.SchemaUpdate]updating schema
+[INFO][2016-04-25 22:22:52,427][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_goodsnum
+[INFO][2016-04-25 22:22:52,427][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [seccheckdate, productdate, firstchecknum, discountrate, firstcheckdate, number, secchecknum, id, purchasecode, warehouseid, seccheckman, goodsid, finalnum, buyprice, firstcheckman, sellprice, secondprice]
+[INFO][2016-04-25 22:22:52,427][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-25 22:22:52,427][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-25 22:22:52,427][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
+[INFO][2016-04-25 22:22:52,667][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@12f5aa2f] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-25 22:30:40,668][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3cdb8522: display name [org.springframework.context.support.ClassPathXmlApplicationContext@3cdb8522]; startup date [Mon Apr 25 22:30:40 CST 2016]; root of context hierarchy
+[INFO][2016-04-25 22:30:40,722][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-25 22:30:41,086][org.springframework.context.support.ClassPathXmlApplicationContext]Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@3cdb8522]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7581c691
+[INFO][2016-04-25 22:30:41,133][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [db.properties]
+[INFO][2016-04-25 22:30:41,206][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7581c691: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDaoImpl,customerDao,customerService,testDao,testService,goodsnumDao,goodsnumService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+[INFO][2016-04-25 22:30:41,287][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-25 22:30:41,290][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-25 22:30:41,292][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-25 22:30:41,294][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-25 22:30:41,437][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.warehouse.domain.Goodsnum -> tb_goodsnum
+[INFO][2016-04-25 22:30:41,446][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2016-04-25 22:30:41,479][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2016-04-25 22:30:41,684][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.5.45
+[INFO][2016-04-25 22:30:41,684][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+[INFO][2016-04-25 22:30:41,699][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-25 22:30:41,703][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2016-04-25 22:30:41,704][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2016-04-25 22:30:41,704][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2016-04-25 22:30:41,704][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2016-04-25 22:30:41,704][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2016-04-25 22:30:41,704][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2016-04-25 22:30:41,705][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2016-04-25 22:30:41,705][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2016-04-25 22:30:41,705][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2016-04-25 22:30:41,706][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2016-04-25 22:30:41,706][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2016-04-25 22:30:41,706][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2016-04-25 22:30:41,706][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2016-04-25 22:30:41,707][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2016-04-25 22:30:41,707][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2016-04-25 22:30:41,708][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2016-04-25 22:30:41,708][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2016-04-25 22:30:41,708][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2016-04-25 22:30:41,708][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2016-04-25 22:30:41,708][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2016-04-25 22:30:41,708][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2016-04-25 22:30:41,709][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2016-04-25 22:30:41,709][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2016-04-25 22:30:41,712][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2016-04-25 22:30:41,712][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2016-04-25 22:30:41,712][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2016-04-25 22:30:41,713][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2016-04-25 22:30:41,713][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2016-04-25 22:30:41,739][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2016-04-25 22:30:41,863][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2016-04-25 22:30:41,870][org.hibernate.tool.hbm2ddl.SchemaUpdate]Running hbm2ddl schema update
+[INFO][2016-04-25 22:30:41,870][org.hibernate.tool.hbm2ddl.SchemaUpdate]fetching database metadata
+[INFO][2016-04-25 22:30:41,872][org.hibernate.tool.hbm2ddl.SchemaUpdate]updating schema
+[INFO][2016-04-25 22:30:41,918][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_goodsnum
+[INFO][2016-04-25 22:30:41,918][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [seccheckdate, productdate, firstchecknum, discountrate, firstcheckdate, number, secchecknum, id, purchasecode, warehouseid, seccheckman, goodsid, finalnum, buyprice, firstcheckman, sellprice, secondprice]
+[INFO][2016-04-25 22:30:41,918][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-25 22:30:41,918][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-25 22:30:41,918][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
+[INFO][2016-04-25 22:30:42,011][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@15a13207] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-25 22:40:14,601][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@70019a64: display name [org.springframework.context.support.ClassPathXmlApplicationContext@70019a64]; startup date [Mon Apr 25 22:40:14 CST 2016]; root of context hierarchy
+[INFO][2016-04-25 22:40:14,662][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-25 22:40:15,031][org.springframework.context.support.ClassPathXmlApplicationContext]Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@70019a64]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1b1395dc
+[INFO][2016-04-25 22:40:15,079][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [db.properties]
+[INFO][2016-04-25 22:40:15,151][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b1395dc: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDaoImpl,customerDao,customerService,testDao,testService,goodsnumDao,goodsnumService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+[INFO][2016-04-25 22:40:15,235][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-25 22:40:15,238][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-25 22:40:15,240][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-25 22:40:15,243][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-25 22:40:15,381][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.warehouse.domain.Goodsnum -> tb_goodsnum
+[INFO][2016-04-25 22:40:15,389][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2016-04-25 22:40:15,424][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2016-04-25 22:40:15,628][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.5.45
+[INFO][2016-04-25 22:40:15,628][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+[INFO][2016-04-25 22:40:15,642][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-25 22:40:15,645][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2016-04-25 22:40:15,646][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2016-04-25 22:40:15,646][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2016-04-25 22:40:15,646][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2016-04-25 22:40:15,646][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2016-04-25 22:40:15,646][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2016-04-25 22:40:15,647][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2016-04-25 22:40:15,647][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2016-04-25 22:40:15,647][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2016-04-25 22:40:15,647][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2016-04-25 22:40:15,647][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2016-04-25 22:40:15,648][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2016-04-25 22:40:15,648][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2016-04-25 22:40:15,648][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2016-04-25 22:40:15,648][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2016-04-25 22:40:15,649][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2016-04-25 22:40:15,649][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2016-04-25 22:40:15,649][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2016-04-25 22:40:15,649][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2016-04-25 22:40:15,649][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2016-04-25 22:40:15,649][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2016-04-25 22:40:15,650][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2016-04-25 22:40:15,650][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2016-04-25 22:40:15,652][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2016-04-25 22:40:15,653][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2016-04-25 22:40:15,653][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2016-04-25 22:40:15,653][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2016-04-25 22:40:15,654][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2016-04-25 22:40:15,678][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2016-04-25 22:40:15,815][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2016-04-25 22:40:15,821][org.hibernate.tool.hbm2ddl.SchemaUpdate]Running hbm2ddl schema update
+[INFO][2016-04-25 22:40:15,821][org.hibernate.tool.hbm2ddl.SchemaUpdate]fetching database metadata
+[INFO][2016-04-25 22:40:15,823][org.hibernate.tool.hbm2ddl.SchemaUpdate]updating schema
+[INFO][2016-04-25 22:40:15,860][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_goodsnum
+[INFO][2016-04-25 22:40:15,860][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [seccheckdate, productdate, firstchecknum, discountrate, firstcheckdate, number, secchecknum, id, purchasecode, warehouseid, seccheckman, goodsid, finalnum, buyprice, firstcheckman, sellprice, secondprice]
+[INFO][2016-04-25 22:40:15,860][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-25 22:40:15,860][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-25 22:40:15,861][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
+[INFO][2016-04-25 22:40:15,957][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@58958b07] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-25 22:46:05,694][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6669d6db: display name [org.springframework.context.support.ClassPathXmlApplicationContext@6669d6db]; startup date [Mon Apr 25 22:46:05 CST 2016]; root of context hierarchy
+[INFO][2016-04-25 22:46:05,749][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-25 22:46:06,077][org.springframework.context.support.ClassPathXmlApplicationContext]Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@6669d6db]: org.springframework.beans.factory.support.DefaultListableBeanFactory@56165397
+[INFO][2016-04-25 22:46:06,124][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [db.properties]
+[INFO][2016-04-25 22:46:06,194][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@56165397: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDaoImpl,customerDao,customerService,testDao,testService,goodsnumDao,goodsnumService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+[INFO][2016-04-25 22:46:06,270][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-25 22:46:06,272][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-25 22:46:06,274][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-25 22:46:06,277][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-25 22:46:06,413][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.warehouse.domain.Goodsnum -> tb_goodsnum
+[INFO][2016-04-25 22:46:06,423][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2016-04-25 22:46:06,455][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2016-04-25 22:46:06,659][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.5.45
+[INFO][2016-04-25 22:46:06,659][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+[INFO][2016-04-25 22:46:06,670][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-25 22:46:06,672][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2016-04-25 22:46:06,673][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2016-04-25 22:46:06,673][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2016-04-25 22:46:06,673][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2016-04-25 22:46:06,673][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2016-04-25 22:46:06,673][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2016-04-25 22:46:06,674][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2016-04-25 22:46:06,674][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2016-04-25 22:46:06,674][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2016-04-25 22:46:06,674][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2016-04-25 22:46:06,674][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2016-04-25 22:46:06,674][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2016-04-25 22:46:06,675][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2016-04-25 22:46:06,675][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2016-04-25 22:46:06,675][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2016-04-25 22:46:06,676][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2016-04-25 22:46:06,676][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2016-04-25 22:46:06,676][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2016-04-25 22:46:06,677][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2016-04-25 22:46:06,677][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2016-04-25 22:46:06,677][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2016-04-25 22:46:06,677][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2016-04-25 22:46:06,677][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2016-04-25 22:46:06,680][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2016-04-25 22:46:06,681][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2016-04-25 22:46:06,681][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2016-04-25 22:46:06,681][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2016-04-25 22:46:06,681][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2016-04-25 22:46:06,707][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2016-04-25 22:46:06,873][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2016-04-25 22:46:06,893][org.hibernate.tool.hbm2ddl.SchemaUpdate]Running hbm2ddl schema update
+[INFO][2016-04-25 22:46:06,893][org.hibernate.tool.hbm2ddl.SchemaUpdate]fetching database metadata
+[INFO][2016-04-25 22:46:06,902][org.hibernate.tool.hbm2ddl.SchemaUpdate]updating schema
+[INFO][2016-04-25 22:46:06,991][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_goodsnum
+[INFO][2016-04-25 22:46:06,992][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [seccheckdate, productdate, firstchecknum, discountrate, firstcheckdate, number, secchecknum, id, purchasecode, warehouseid, seccheckman, goodsid, finalnum, buyprice, firstcheckman, sellprice, secondprice]
+[INFO][2016-04-25 22:46:06,992][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-25 22:46:06,992][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-25 22:46:06,992][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
+[INFO][2016-04-25 22:46:07,158][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@551bd2a0] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-25 22:50:55,405][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3cdb8522: display name [org.springframework.context.support.ClassPathXmlApplicationContext@3cdb8522]; startup date [Mon Apr 25 22:50:55 CST 2016]; root of context hierarchy
+[INFO][2016-04-25 22:50:55,462][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-25 22:50:55,812][org.springframework.context.support.ClassPathXmlApplicationContext]Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@3cdb8522]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1b1395dc
+[INFO][2016-04-25 22:50:55,857][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [db.properties]
+[INFO][2016-04-25 22:50:55,929][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b1395dc: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDaoImpl,customerDao,customerService,testDao,testService,goodsnumDao,goodsnumService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+[INFO][2016-04-25 22:50:56,009][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-25 22:50:56,012][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-25 22:50:56,015][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-25 22:50:56,019][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-25 22:50:56,174][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.warehouse.domain.Goodsnum -> tb_goodsnum
+[INFO][2016-04-25 22:50:56,183][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2016-04-25 22:50:56,215][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2016-04-25 22:50:56,419][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.5.45
+[INFO][2016-04-25 22:50:56,419][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+[INFO][2016-04-25 22:50:56,432][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-25 22:50:56,434][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2016-04-25 22:50:56,435][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2016-04-25 22:50:56,435][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2016-04-25 22:50:56,435][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2016-04-25 22:50:56,435][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2016-04-25 22:50:56,435][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2016-04-25 22:50:56,436][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2016-04-25 22:50:56,436][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2016-04-25 22:50:56,436][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2016-04-25 22:50:56,437][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2016-04-25 22:50:56,437][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2016-04-25 22:50:56,437][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2016-04-25 22:50:56,437][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2016-04-25 22:50:56,437][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2016-04-25 22:50:56,437][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2016-04-25 22:50:56,438][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2016-04-25 22:50:56,439][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2016-04-25 22:50:56,439][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2016-04-25 22:50:56,439][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2016-04-25 22:50:56,439][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2016-04-25 22:50:56,439][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2016-04-25 22:50:56,439][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2016-04-25 22:50:56,439][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2016-04-25 22:50:56,443][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2016-04-25 22:50:56,444][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2016-04-25 22:50:56,444][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2016-04-25 22:50:56,445][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2016-04-25 22:50:56,445][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2016-04-25 22:50:56,472][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2016-04-25 22:50:56,599][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2016-04-25 22:50:56,604][org.hibernate.tool.hbm2ddl.SchemaUpdate]Running hbm2ddl schema update
+[INFO][2016-04-25 22:50:56,604][org.hibernate.tool.hbm2ddl.SchemaUpdate]fetching database metadata
+[INFO][2016-04-25 22:50:56,607][org.hibernate.tool.hbm2ddl.SchemaUpdate]updating schema
+[INFO][2016-04-25 22:50:56,646][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_goodsnum
+[INFO][2016-04-25 22:50:56,646][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [seccheckdate, productdate, firstchecknum, discountrate, firstcheckdate, number, secchecknum, id, purchasecode, warehouseid, seccheckman, goodsid, finalnum, buyprice, firstcheckman, sellprice, secondprice]
+[INFO][2016-04-25 22:50:56,646][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-25 22:50:56,646][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-25 22:50:56,646][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
+[INFO][2016-04-25 22:50:56,743][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@317b71d9] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-25 22:53:13,442][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1330c35c: display name [org.springframework.context.support.ClassPathXmlApplicationContext@1330c35c]; startup date [Mon Apr 25 22:53:13 CST 2016]; root of context hierarchy
+[INFO][2016-04-25 22:53:13,522][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-25 22:53:14,059][org.springframework.context.support.ClassPathXmlApplicationContext]Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@1330c35c]: org.springframework.beans.factory.support.DefaultListableBeanFactory@422fe3d3
+[INFO][2016-04-25 22:53:14,107][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [db.properties]
+[INFO][2016-04-25 22:53:14,184][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@422fe3d3: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDaoImpl,customerDao,customerService,testDao,testService,goodsnumDao,goodsnumService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+[INFO][2016-04-25 22:53:14,260][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-25 22:53:14,263][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-25 22:53:14,266][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-25 22:53:14,268][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-25 22:53:14,431][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.warehouse.domain.Goodsnum -> tb_goodsnum
+[INFO][2016-04-25 22:53:14,439][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2016-04-25 22:53:14,471][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2016-04-25 22:53:14,686][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.5.45
+[INFO][2016-04-25 22:53:14,687][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+[INFO][2016-04-25 22:53:14,697][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-25 22:53:14,699][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2016-04-25 22:53:14,700][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2016-04-25 22:53:14,700][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2016-04-25 22:53:14,700][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2016-04-25 22:53:14,700][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2016-04-25 22:53:14,700][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2016-04-25 22:53:14,701][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2016-04-25 22:53:14,701][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2016-04-25 22:53:14,701][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2016-04-25 22:53:14,701][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2016-04-25 22:53:14,701][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2016-04-25 22:53:14,701][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2016-04-25 22:53:14,701][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2016-04-25 22:53:14,701][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2016-04-25 22:53:14,702][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2016-04-25 22:53:14,703][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2016-04-25 22:53:14,703][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2016-04-25 22:53:14,703][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2016-04-25 22:53:14,703][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2016-04-25 22:53:14,703][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2016-04-25 22:53:14,703][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2016-04-25 22:53:14,703][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2016-04-25 22:53:14,703][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2016-04-25 22:53:14,707][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2016-04-25 22:53:14,707][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2016-04-25 22:53:14,707][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2016-04-25 22:53:14,707][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2016-04-25 22:53:14,707][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2016-04-25 22:53:14,733][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2016-04-25 22:53:14,855][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2016-04-25 22:53:14,860][org.hibernate.tool.hbm2ddl.SchemaUpdate]Running hbm2ddl schema update
+[INFO][2016-04-25 22:53:14,860][org.hibernate.tool.hbm2ddl.SchemaUpdate]fetching database metadata
+[INFO][2016-04-25 22:53:14,862][org.hibernate.tool.hbm2ddl.SchemaUpdate]updating schema
+[INFO][2016-04-25 22:53:14,901][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_goodsnum
+[INFO][2016-04-25 22:53:14,902][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [seccheckdate, productdate, firstchecknum, discountrate, firstcheckdate, number, secchecknum, id, purchasecode, warehouseid, seccheckman, goodsid, finalnum, buyprice, firstcheckman, sellprice, secondprice]
+[INFO][2016-04-25 22:53:14,902][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-25 22:53:14,902][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-25 22:53:14,902][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
+[INFO][2016-04-25 22:53:14,998][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@41daa600] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-26 11:53:35,253][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2e98f864: display name [org.springframework.context.support.ClassPathXmlApplicationContext@2e98f864]; startup date [Tue Apr 26 11:53:35 CST 2016]; root of context hierarchy
+[INFO][2016-04-26 11:53:35,362][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-26 11:53:35,721][org.springframework.context.support.ClassPathXmlApplicationContext]Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@2e98f864]: org.springframework.beans.factory.support.DefaultListableBeanFactory@53ca0aa8
+[INFO][2016-04-26 11:53:35,767][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [db.properties]
+[INFO][2016-04-26 11:53:35,834][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@53ca0aa8: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDaoImpl,customerDao,customerService,testDao,testService,goodsnumDao,goodsnumService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+[INFO][2016-04-26 11:53:35,910][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-26 11:53:35,913][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-26 11:53:35,915][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-26 11:53:35,918][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-26 11:53:36,046][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.warehouse.domain.Goodsnum -> tb_goodsnum
+[INFO][2016-04-26 11:53:36,055][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2016-04-26 11:53:36,086][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2016-04-26 11:53:36,286][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.5.45
+[INFO][2016-04-26 11:53:36,286][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+[INFO][2016-04-26 11:53:36,300][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-26 11:53:36,303][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2016-04-26 11:53:36,304][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2016-04-26 11:53:36,304][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2016-04-26 11:53:36,304][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2016-04-26 11:53:36,304][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2016-04-26 11:53:36,304][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2016-04-26 11:53:36,305][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2016-04-26 11:53:36,305][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2016-04-26 11:53:36,305][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2016-04-26 11:53:36,306][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2016-04-26 11:53:36,306][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2016-04-26 11:53:36,306][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2016-04-26 11:53:36,306][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2016-04-26 11:53:36,306][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2016-04-26 11:53:36,306][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2016-04-26 11:53:36,308][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2016-04-26 11:53:36,308][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2016-04-26 11:53:36,308][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2016-04-26 11:53:36,308][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2016-04-26 11:53:36,308][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2016-04-26 11:53:36,308][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2016-04-26 11:53:36,308][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2016-04-26 11:53:36,308][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2016-04-26 11:53:36,311][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2016-04-26 11:53:36,312][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2016-04-26 11:53:36,312][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2016-04-26 11:53:36,312][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2016-04-26 11:53:36,312][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2016-04-26 11:53:36,336][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2016-04-26 11:53:36,454][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2016-04-26 11:53:36,459][org.hibernate.tool.hbm2ddl.SchemaUpdate]Running hbm2ddl schema update
+[INFO][2016-04-26 11:53:36,459][org.hibernate.tool.hbm2ddl.SchemaUpdate]fetching database metadata
+[INFO][2016-04-26 11:53:36,461][org.hibernate.tool.hbm2ddl.SchemaUpdate]updating schema
+[INFO][2016-04-26 11:53:36,531][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_goodsnum
+[INFO][2016-04-26 11:53:36,531][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [seccheckdate, productdate, firstchecknum, discountrate, firstcheckdate, number, secchecknum, id, purchasecode, warehouseid, seccheckman, goodsid, finalnum, buyprice, firstcheckman, sellprice, secondprice]
+[INFO][2016-04-26 11:53:36,531][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-26 11:53:36,531][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-26 11:53:36,531][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
+[INFO][2016-04-26 11:53:36,630][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@551bd2a0] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-28 16:15:30,547][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4522cbaf: display name [org.springframework.context.support.ClassPathXmlApplicationContext@4522cbaf]; startup date [Thu Apr 28 16:15:30 CST 2016]; root of context hierarchy
+[INFO][2016-04-28 16:15:30,638][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-28 16:15:31,032][org.springframework.context.support.ClassPathXmlApplicationContext]Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@4522cbaf]: org.springframework.beans.factory.support.DefaultListableBeanFactory@537fe015
+[INFO][2016-04-28 16:15:31,074][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [db.properties]
+[INFO][2016-04-28 16:15:31,142][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@537fe015: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDaoImpl,customerDao,customerService,purchasebillinfoDao,purchasebillinfoService,testDao,testService,goodsnumDao,goodsnumService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+[INFO][2016-04-28 16:15:31,214][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-28 16:15:31,216][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-28 16:15:31,219][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-28 16:15:31,221][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-28 16:15:31,351][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.warehouse.domain.Goodsnum -> tb_goodsnum
+[INFO][2016-04-28 16:15:31,416][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.domain.Purchasebillinfo -> tb_purchasebillinfo
+[INFO][2016-04-28 16:15:31,418][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2016-04-28 16:15:31,475][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@537fe015: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDaoImpl,customerDao,customerService,purchasebillinfoDao,purchasebillinfoService,testDao,testService,goodsnumDao,goodsnumService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+[INFO][2016-04-28 16:17:18,737][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4522cbaf: display name [org.springframework.context.support.ClassPathXmlApplicationContext@4522cbaf]; startup date [Thu Apr 28 16:17:18 CST 2016]; root of context hierarchy
+[INFO][2016-04-28 16:17:18,792][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-28 16:17:19,102][org.springframework.context.support.ClassPathXmlApplicationContext]Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@4522cbaf]: org.springframework.beans.factory.support.DefaultListableBeanFactory@266f4689
+[INFO][2016-04-28 16:17:19,154][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [db.properties]
+[INFO][2016-04-28 16:17:19,228][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@266f4689: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDaoImpl,customerDao,customerService,purchasebillinfoDao,purchasebillinfoService,testDao,testService,goodsnumDao,goodsnumService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+[INFO][2016-04-28 16:17:19,305][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-28 16:17:19,307][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-28 16:17:19,309][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-28 16:17:19,313][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-28 16:17:19,458][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.warehouse.domain.Goodsnum -> tb_goodsnum
+[INFO][2016-04-28 16:17:19,492][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.domain.Purchasebillinfo -> tb_purchasebillinfo
+[INFO][2016-04-28 16:17:19,493][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2016-04-28 16:17:19,530][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2016-04-28 16:17:19,720][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.5.45
+[INFO][2016-04-28 16:17:19,720][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+[INFO][2016-04-28 16:17:19,735][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-28 16:17:19,739][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2016-04-28 16:17:19,740][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2016-04-28 16:17:19,740][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2016-04-28 16:17:19,740][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2016-04-28 16:17:19,741][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2016-04-28 16:17:19,741][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2016-04-28 16:17:19,741][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2016-04-28 16:17:19,741][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2016-04-28 16:17:19,741][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2016-04-28 16:17:19,742][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2016-04-28 16:17:19,742][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2016-04-28 16:17:19,742][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2016-04-28 16:17:19,742][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2016-04-28 16:17:19,742][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2016-04-28 16:17:19,742][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2016-04-28 16:17:19,744][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2016-04-28 16:17:19,744][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2016-04-28 16:17:19,744][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2016-04-28 16:17:19,744][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2016-04-28 16:17:19,744][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2016-04-28 16:17:19,744][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2016-04-28 16:17:19,744][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2016-04-28 16:17:19,744][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2016-04-28 16:17:19,747][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2016-04-28 16:17:19,748][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2016-04-28 16:17:19,748][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2016-04-28 16:17:19,748][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2016-04-28 16:17:19,748][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2016-04-28 16:17:19,775][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2016-04-28 16:17:19,903][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2016-04-28 16:17:19,922][org.hibernate.tool.hbm2ddl.SchemaUpdate]Running hbm2ddl schema update
+[INFO][2016-04-28 16:17:19,922][org.hibernate.tool.hbm2ddl.SchemaUpdate]fetching database metadata
+[INFO][2016-04-28 16:17:19,923][org.hibernate.tool.hbm2ddl.SchemaUpdate]updating schema
+[INFO][2016-04-28 16:17:19,975][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_goodsnum
+[INFO][2016-04-28 16:17:19,975][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [seccheckdate, productdate, firstchecknum, discountrate, firstcheckdate, number, secchecknum, id, purchasecode, warehouseid, seccheckman, goodsid, finalnum, buyprice, firstcheckman, sellprice, secondprice]
+[INFO][2016-04-28 16:17:19,975][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-28 16:17:19,975][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-28 16:17:19,993][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_purchasebillinfo
+[INFO][2016-04-28 16:17:19,993][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [id, warehouseid, billtype, providerid, goodsid, operateperson, paytype, userid, number, inporttime, comment]
+[INFO][2016-04-28 16:17:19,994][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-28 16:17:19,994][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-28 16:17:19,994][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
+[INFO][2016-04-28 16:17:20,143][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@416e1533] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-28 16:17:46,138][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25b7c9d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@25b7c9d1]; startup date [Thu Apr 28 16:17:46 CST 2016]; root of context hierarchy
+[INFO][2016-04-28 16:17:46,213][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-28 16:17:46,529][org.springframework.context.support.ClassPathXmlApplicationContext]Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@25b7c9d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@266f4689
+[INFO][2016-04-28 16:17:46,576][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [db.properties]
+[INFO][2016-04-28 16:17:46,642][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@266f4689: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDaoImpl,customerDao,customerService,purchasebillinfoDao,purchasebillinfoService,testDao,testService,goodsnumDao,goodsnumService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+[INFO][2016-04-28 16:17:46,709][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-28 16:17:46,712][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-28 16:17:46,715][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-28 16:17:46,719][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-28 16:17:46,871][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.warehouse.domain.Goodsnum -> tb_goodsnum
+[INFO][2016-04-28 16:17:46,901][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.domain.Purchasebillinfo -> tb_purchasebillinfo
+[INFO][2016-04-28 16:17:46,902][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2016-04-28 16:17:46,935][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2016-04-28 16:17:47,129][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.5.45
+[INFO][2016-04-28 16:17:47,130][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+[INFO][2016-04-28 16:17:47,144][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-28 16:17:47,148][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2016-04-28 16:17:47,149][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2016-04-28 16:17:47,150][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2016-04-28 16:17:47,150][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2016-04-28 16:17:47,150][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2016-04-28 16:17:47,150][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2016-04-28 16:17:47,150][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2016-04-28 16:17:47,150][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2016-04-28 16:17:47,150][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2016-04-28 16:17:47,151][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2016-04-28 16:17:47,151][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2016-04-28 16:17:47,151][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2016-04-28 16:17:47,151][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2016-04-28 16:17:47,151][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2016-04-28 16:17:47,151][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2016-04-28 16:17:47,153][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2016-04-28 16:17:47,153][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2016-04-28 16:17:47,153][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2016-04-28 16:17:47,153][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2016-04-28 16:17:47,153][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2016-04-28 16:17:47,153][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2016-04-28 16:17:47,153][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2016-04-28 16:17:47,153][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2016-04-28 16:17:47,157][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2016-04-28 16:17:47,158][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2016-04-28 16:17:47,158][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2016-04-28 16:17:47,158][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2016-04-28 16:17:47,158][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2016-04-28 16:17:47,182][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2016-04-28 16:17:47,311][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2016-04-28 16:17:47,326][org.hibernate.tool.hbm2ddl.SchemaUpdate]Running hbm2ddl schema update
+[INFO][2016-04-28 16:17:47,326][org.hibernate.tool.hbm2ddl.SchemaUpdate]fetching database metadata
+[INFO][2016-04-28 16:17:47,328][org.hibernate.tool.hbm2ddl.SchemaUpdate]updating schema
+[INFO][2016-04-28 16:17:47,368][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_goodsnum
+[INFO][2016-04-28 16:17:47,368][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [seccheckdate, productdate, firstchecknum, discountrate, firstcheckdate, number, secchecknum, id, purchasecode, warehouseid, seccheckman, goodsid, finalnum, buyprice, firstcheckman, sellprice, secondprice]
+[INFO][2016-04-28 16:17:47,368][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-28 16:17:47,368][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-28 16:17:47,380][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_purchasebillinfo
+[INFO][2016-04-28 16:17:47,380][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [id, warehouseid, billtype, providerid, goodsid, operateperson, paytype, userid, number, inporttime, comment]
+[INFO][2016-04-28 16:17:47,380][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-28 16:17:47,380][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-28 16:17:47,380][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
+[INFO][2016-04-28 16:17:47,481][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@28ad1e1b] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-28 16:19:25,530][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25b7c9d1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@25b7c9d1]; startup date [Thu Apr 28 16:19:25 CST 2016]; root of context hierarchy
+[INFO][2016-04-28 16:19:25,590][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-28 16:19:25,882][org.springframework.context.support.ClassPathXmlApplicationContext]Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@25b7c9d1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@6857f67
+[INFO][2016-04-28 16:19:25,936][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [db.properties]
+[INFO][2016-04-28 16:19:26,001][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6857f67: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDaoImpl,customerDao,customerService,purchasebillinfoDao,purchasebillinfoService,testDao,testService,goodsnumDao,goodsnumService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+[INFO][2016-04-28 16:19:26,079][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-28 16:19:26,081][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-28 16:19:26,084][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-28 16:19:26,087][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-28 16:19:26,243][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.warehouse.domain.Goodsnum -> tb_goodsnum
+[INFO][2016-04-28 16:19:26,279][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.purchase.domain.Purchasebillinfo -> tb_purchasebillinfo
+[INFO][2016-04-28 16:19:26,280][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2016-04-28 16:19:26,327][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2016-04-28 16:19:26,565][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.5.45
+[INFO][2016-04-28 16:19:26,566][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+[INFO][2016-04-28 16:19:26,579][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-28 16:19:26,582][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2016-04-28 16:19:26,583][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2016-04-28 16:19:26,583][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2016-04-28 16:19:26,583][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2016-04-28 16:19:26,583][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2016-04-28 16:19:26,583][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2016-04-28 16:19:26,584][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2016-04-28 16:19:26,584][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2016-04-28 16:19:26,584][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2016-04-28 16:19:26,585][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2016-04-28 16:19:26,585][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2016-04-28 16:19:26,585][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2016-04-28 16:19:26,585][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2016-04-28 16:19:26,585][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2016-04-28 16:19:26,585][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2016-04-28 16:19:26,587][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2016-04-28 16:19:26,588][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2016-04-28 16:19:26,588][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2016-04-28 16:19:26,588][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2016-04-28 16:19:26,588][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2016-04-28 16:19:26,588][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2016-04-28 16:19:26,589][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2016-04-28 16:19:26,589][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2016-04-28 16:19:26,593][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2016-04-28 16:19:26,593][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2016-04-28 16:19:26,594][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2016-04-28 16:19:26,594][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2016-04-28 16:19:26,594][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2016-04-28 16:19:26,632][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2016-04-28 16:19:26,818][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2016-04-28 16:19:26,822][org.hibernate.tool.hbm2ddl.SchemaUpdate]Running hbm2ddl schema update
+[INFO][2016-04-28 16:19:26,823][org.hibernate.tool.hbm2ddl.SchemaUpdate]fetching database metadata
+[INFO][2016-04-28 16:19:26,824][org.hibernate.tool.hbm2ddl.SchemaUpdate]updating schema
+[INFO][2016-04-28 16:19:26,884][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_goodsnum
+[INFO][2016-04-28 16:19:26,884][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [seccheckdate, productdate, firstchecknum, discountrate, firstcheckdate, number, secchecknum, id, purchasecode, warehouseid, seccheckman, goodsid, finalnum, buyprice, firstcheckman, sellprice, secondprice]
+[INFO][2016-04-28 16:19:26,885][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-28 16:19:26,885][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-28 16:19:26,939][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_purchasebillinfo
+[INFO][2016-04-28 16:19:26,940][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [id, warehouseid, billtype, providerid, goodsid, operateperson, paytype, userid, number, inporttime, comment]
+[INFO][2016-04-28 16:19:26,940][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-28 16:19:26,940][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-28 16:19:26,940][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
+[INFO][2016-04-28 16:19:27,047][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@37535a54] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-28 16:20:32,851][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6f6a719e: display name [org.springframework.context.support.ClassPathXmlApplicationContext@6f6a719e]; startup date [Thu Apr 28 16:20:32 CST 2016]; root of context hierarchy
+[INFO][2016-04-28 16:20:32,908][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-04-28 16:20:33,201][org.springframework.context.support.ClassPathXmlApplicationContext]Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@6f6a719e]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7050ad86
+[INFO][2016-04-28 16:20:33,244][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [db.properties]
+[INFO][2016-04-28 16:20:33,309][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7050ad86: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDaoImpl,customerDao,customerService,purchasebillinfoDao,purchasebillinfoService,testDao,testService,goodsnumDao,goodsnumService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+[INFO][2016-04-28 16:20:33,393][org.hibernate.cfg.Environment]Hibernate 3.3.1.GA
+[INFO][2016-04-28 16:20:33,396][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2016-04-28 16:20:33,399][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2016-04-28 16:20:33,401][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2016-04-28 16:20:33,550][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.warehouse.domain.Goodsnum -> tb_goodsnum
+[INFO][2016-04-28 16:20:33,580][org.hibernate.cfg.HbmBinder]Mapping class: com.wgl.supermarket.purchase.domain.Purchasebillinfo -> tb_purchasebillinfo
+[INFO][2016-04-28 16:20:33,580][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2016-04-28 16:20:33,628][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2016-04-28 16:20:33,857][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.5.45
+[INFO][2016-04-28 16:20:33,857][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+[INFO][2016-04-28 16:20:33,870][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-28 16:20:33,874][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2016-04-28 16:20:33,875][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2016-04-28 16:20:33,875][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2016-04-28 16:20:33,875][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2016-04-28 16:20:33,875][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2016-04-28 16:20:33,875][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2016-04-28 16:20:33,876][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2016-04-28 16:20:33,876][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2016-04-28 16:20:33,876][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2016-04-28 16:20:33,877][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2016-04-28 16:20:33,877][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2016-04-28 16:20:33,877][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2016-04-28 16:20:33,877][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2016-04-28 16:20:33,877][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2016-04-28 16:20:33,877][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2016-04-28 16:20:33,878][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2016-04-28 16:20:33,879][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2016-04-28 16:20:33,879][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2016-04-28 16:20:33,879][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2016-04-28 16:20:33,879][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2016-04-28 16:20:33,879][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2016-04-28 16:20:33,879][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2016-04-28 16:20:33,879][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2016-04-28 16:20:33,884][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2016-04-28 16:20:33,884][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2016-04-28 16:20:33,884][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2016-04-28 16:20:33,885][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2016-04-28 16:20:33,885][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2016-04-28 16:20:33,917][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2016-04-28 16:20:34,072][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2016-04-28 16:20:34,076][org.hibernate.tool.hbm2ddl.SchemaUpdate]Running hbm2ddl schema update
+[INFO][2016-04-28 16:20:34,076][org.hibernate.tool.hbm2ddl.SchemaUpdate]fetching database metadata
+[INFO][2016-04-28 16:20:34,077][org.hibernate.tool.hbm2ddl.SchemaUpdate]updating schema
+[INFO][2016-04-28 16:20:34,114][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_goodsnum
+[INFO][2016-04-28 16:20:34,114][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [seccheckdate, productdate, firstchecknum, discountrate, firstcheckdate, number, secchecknum, id, purchasecode, warehouseid, seccheckman, goodsid, finalnum, buyprice, firstcheckman, sellprice, secondprice]
+[INFO][2016-04-28 16:20:34,114][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-28 16:20:34,114][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-28 16:20:34,129][org.hibernate.tool.hbm2ddl.TableMetadata]table found: supermarket.tb_purchasebillinfo
+[INFO][2016-04-28 16:20:34,129][org.hibernate.tool.hbm2ddl.TableMetadata]columns: [id, warehouseid, billtype, providerid, goodsid, operateperson, paytype, userid, number, inporttime, comment]
+[INFO][2016-04-28 16:20:34,129][org.hibernate.tool.hbm2ddl.TableMetadata]foreign keys: []
+[INFO][2016-04-28 16:20:34,129][org.hibernate.tool.hbm2ddl.TableMetadata]indexes: [primary]
+[INFO][2016-04-28 16:20:34,130][org.hibernate.tool.hbm2ddl.SchemaUpdate]schema update complete
+[INFO][2016-04-28 16:20:34,233][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@e1f4bdb] of Hibernate SessionFactory for HibernateTransactionManager

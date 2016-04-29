@@ -2,6 +2,7 @@ package com.wgl.supermarket.warehouse.service;
 
 import java.util.List;
 
+import com.wgl.supermarket.base.util.PageBean;
 import com.wgl.supermarket.warehouse.domain.Goodsnum;
 
 
@@ -23,5 +24,5 @@ public interface GoodsnumService {
 	 * @param params	分页时的查询条件参数
 	 * @return
 	 */
-	//public PageBean queryCustomerByPage(int pageNum,int pageSize,List<Object> params);
+	public PageBean queryGoodsnumByPage(int pageNum,int pageSize,List<Object> params);
 }

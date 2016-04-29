@@ -1,18 +1,19 @@
-package com.wgl.supermarket.warehouse.dao;
+package com.wgl.supermarket.purchase.dao;
 
 import java.util.List;
 
-import com.wgl.supermarket.warehouse.domain.Goodsnum;
+import com.wgl.supermarket.purchase.domain.Purchasebillinfo;
+
 import com.wgl.supermarket.base.dao.DaoSupport;
 import com.wgl.supermarket.base.util.PageBean;
 
-public interface GoodsnumDao extends DaoSupport<Goodsnum> {
+public interface PurchasebillinfoDao extends DaoSupport<Purchasebillinfo> {
 	/**
 	 * 保存实体
 	 * 
 	 * @param goodsnum
 	 */
-	public void save(Goodsnum goodsnum);
+	public void save(Purchasebillinfo purchasebillinfo);
 
 	/**
 	 * 删除实体
@@ -26,7 +27,7 @@ public interface GoodsnumDao extends DaoSupport<Goodsnum> {
 	 * 
 	 * @param entity
 	 */
-	public void update(Goodsnum goodsnum);
+	public void update(Purchasebillinfo purchasebillinfo);
 
 	/**
 	 * 按id查询
@@ -34,7 +35,7 @@ public interface GoodsnumDao extends DaoSupport<Goodsnum> {
 	 * @param id
 	 * @return
 	 */
-	public Goodsnum getById(Long id);
+	public Purchasebillinfo getById(Long id);
 
 	/**
 	 * 按id查询
@@ -42,14 +43,14 @@ public interface GoodsnumDao extends DaoSupport<Goodsnum> {
 	 * @param ids
 	 * @return
 	 */
-	public List<Goodsnum> getByIds(Long[] ids);
+	public List<Purchasebillinfo> getByIds(Long[] ids);
 
 	/**
 	 * 查询所有
 	 * 
 	 * @return
 	 */
-	public List<Goodsnum> findAll();
+	public List<Purchasebillinfo> findAll();
 	
 	/**
 	 * 公共的查询分页信息的方法
@@ -62,5 +63,5 @@ public interface GoodsnumDao extends DaoSupport<Goodsnum> {
 	 *            参数列表，与HQL中问号一一对应
 	 * @return
 	 */
-	public PageBean queryGoodsnumByPage(int pageNum, int pageSize,List<Object> parameters);
+	public PageBean queryPurchasebillinfoByPage(int pageNum, int pageSize,List<Object> parameters);
 }

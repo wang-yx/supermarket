@@ -5,10 +5,10 @@ import java.util.List;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 
-import com.wgl.supermarket.warehouse.domain.Goodsnum;
-
 import com.wgl.supermarket.base.dao.impl.DaoSupportImpl;
+import com.wgl.supermarket.base.util.PageBean;
 import com.wgl.supermarket.warehouse.dao.GoodsnumDao;
+import com.wgl.supermarket.warehouse.domain.Goodsnum;
 
 @Repository("goodsnumDao")
 public class GoodsnumDaoImpl extends DaoSupportImpl<Goodsnum> implements GoodsnumDao {
@@ -63,29 +63,28 @@ public class GoodsnumDaoImpl extends DaoSupportImpl<Goodsnum> implements Goodsnu
 
 	@Override
 	public boolean equals(Object obj) {
-		// TODO Auto-generated method stub
 		return super.equals(obj);
 	}
 
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
-		// TODO Auto-generated method stub
 		return super.clone();
 	}
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return super.toString();
 	}
 
 	@Override
 	protected void finalize() throws Throwable {
-		// TODO Auto-generated method stub
 		super.finalize();
 	}
 
-	
-
+	@Override
+	public PageBean queryGoodsnumByPage(int pageNum, int pageSize,List<Object> parameters) {
+		String hql = "From Goodsnum";
+		return super.getPageBean(pageNum, pageSize, hql, parameters);
+	}
 }
 

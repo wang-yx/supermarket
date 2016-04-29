@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.wgl.supermarket.warehouse.domain.Goodsnum;
-
+import com.wgl.supermarket.base.util.PageBean;
 import com.wgl.supermarket.warehouse.dao.GoodsnumDao;
+import com.wgl.supermarket.warehouse.domain.Goodsnum;
 import com.wgl.supermarket.warehouse.service.GoodsnumService;
 
 @Service("goodsnumService")
@@ -25,12 +25,10 @@ public class GoodsnumServiceImpl implements GoodsnumService {
 	public List<Goodsnum> queryGoodsnumList() {
 		return this.goodsnumDao.findAll();
 	}
-	
-	//@Override
-	//public PageBean queryCustomerByPage(int pageNum, int pageSize,List<Object> params) {
-	//	return this.customerDao.queryCustomerByPage(pageNum, pageSize, params);
-	//}
+	@Override
+	public PageBean queryGoodsnumByPage(int pageNum, int pageSize,List<Object> params) {
+		return this.goodsnumDao.queryGoodsnumByPage(pageNum, pageSize, params);
+	}
 
-	
 	
 }

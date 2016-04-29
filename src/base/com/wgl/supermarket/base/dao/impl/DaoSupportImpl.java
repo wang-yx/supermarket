@@ -10,6 +10,8 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
+import com.wgl.supermarket.base.util.PageBean;
+
 import com.wgl.supermarket.base.dao.DaoSupport;
 
 // @Transactional注解可以被继承
@@ -77,7 +79,7 @@ public abstract class DaoSupportImpl<T> implements DaoSupport<T> {
 				"FROM " + clazz.getSimpleName())//
 				.list();
 	}
-	/*
+	
 	// 公共的查询分页信息的方法
 	public PageBean getPageBean(int pageNum, int pageSize, String hql, List<Object> params) {
 		// 查询本页的数据列表
@@ -99,5 +101,5 @@ public abstract class DaoSupportImpl<T> implements DaoSupport<T> {
 		}
 		Long count = (Long) countQuery.uniqueResult(); // 执行查询
 		return new PageBean(pageNum, pageSize, count.intValue(), list);
-	}*/
+	}
 }

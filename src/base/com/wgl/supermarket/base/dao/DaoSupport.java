@@ -2,6 +2,8 @@ package com.wgl.supermarket.base.dao;
 
 import java.util.List;
 
+import com.wgl.supermarket.base.util.PageBean;
+
 public interface DaoSupport<T> {
 
 	/**
@@ -59,6 +61,6 @@ public interface DaoSupport<T> {
 	 *            参数列表，与HQL中问号一一对应
 	 * @return
 	 */
-	//PageBean getPageBean(int pageNum, int pageSize, String hql, List<Object> parameters);
+	PageBean getPageBean(int pageNum, int pageSize, String hql, List<Object> parameters);
 
 }
