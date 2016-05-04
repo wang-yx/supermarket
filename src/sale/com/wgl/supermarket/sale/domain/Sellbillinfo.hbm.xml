@@ -3,12 +3,12 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class name="com.wgl.supermarket.domain.Sellbillinfo" table="tb_sellbillinfo">
+	<class name="com.wgl.supermarket.sale.domain.Sellbillinfo" table="tb_sellbillinfo">
 		<id name="id" column="id" type="java.lang.Integer" length="10">
 			<generator class="increment"/>
 		</id>
 		<property name="paytype" column="paytype" type="java.lang.String" length="50"/>
-		<property name="inporttime" column="inporttime" type="java.lang.Date"/>
+		<property name="inporttime" column="inporttime" type="java.sql.Date"/>
 		<property name="operateperson" column="operateperson" type="java.lang.String" length="20"/>
 		<property name="number" column="number" type="java.lang.Integer" length="10"/>
 		<property name="comment" column="comment" type="java.lang.String" length="100"/>

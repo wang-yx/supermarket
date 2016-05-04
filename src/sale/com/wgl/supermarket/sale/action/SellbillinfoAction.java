@@ -1,20 +1,20 @@
-package com.wgl.supermarket.purchase.action;
+package com.wgl.supermarket.sale.action;
 
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.wgl.supermarket.purchase.service.PurchasebillinfoService;
+import com.wgl.supermarket.sale.domain.Sellbillinfo;
 
-import com.wgl.supermarket.purchase.domain.Purchasebillinfo;
+import com.wgl.supermarket.sale.service.SellbillinfoService;
 
-public class PurchasebillinfoAction {
+public class SellbillinfoAction {
 	public static void main(String[] args){
 		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
-		List<Purchasebillinfo> purchasebillinfoList = ((PurchasebillinfoService)ac.getBean("purchasebillinfoService")).queryPurchasebillinfoList();
+		List<Sellbillinfo> sellbillinfo = ((SellbillinfoService)ac.getBean("sellbillinfoService")).querySellbillinfoList();
 		
-		for(Purchasebillinfo gg:purchasebillinfoList){
+		for(Sellbillinfo gg:sellbillinfo){
 			System.out.println("------>"+ gg.toString());	
 			System.out.println("------>"+ gg.getPaytype());	
 		}

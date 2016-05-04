@@ -6,7 +6,7 @@ import java.util.Date;
 public class Sellbillinfo implements Serializable {
 	private static final long serialVersionUID = -7668124343209297642L;
 	//销售和退货的信息单id
-	private int id;
+	private Integer id;
 	//支付方式
 	private String paytype;
 	//交易时间
@@ -14,24 +14,24 @@ public class Sellbillinfo implements Serializable {
 	//操作员
 	private String operateperson;
 	//数量
-	private int number;
+	private Integer number;
 	//备注
 	private String comment;
 	//单据类型（1=销售单，2=销售退货单）
-	private int billtype;
+	private Integer billtype;
 	//客户id（外键）
-	private int customerid;
+	private Integer customerid;
 	//仓库id（外键）
-	private int warehouseid;
+	private Integer warehouseid;
 	//员工id（外键）
-	private int userid;
+	private Integer userid;
 	//商品id（外键）
-	private int goodsid;
+	private Integer goodsid;
 	
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getPaytype() {
@@ -52,10 +52,10 @@ public class Sellbillinfo implements Serializable {
 	public void setOperateperson(String operateperson) {
 		this.operateperson = operateperson;
 	}
-	public int getNumber() {
+	public Integer getNumber() {
 		return number;
 	}
-	public void setNumber(int number) {
+	public void setNumber(Integer number) {
 		this.number = number;
 	}
 	public String getComment() {
@@ -64,37 +64,37 @@ public class Sellbillinfo implements Serializable {
 	public void setComment(String comment) {
 		this.comment = comment;
 	}
-	public int getBilltype() {
+	public Integer getBilltype() {
 		return billtype;
 	}
-	public void setBilltype(int billtype) {
+	public void setBilltype(Integer billtype) {
 		this.billtype = billtype;
 	}
-	public int getCustomerid() {
+	public Integer getCustomerid() {
 		return customerid;
 	}
-	public void setCustomerid(int customerid) {
+	public void setCustomerid(Integer customerid) {
 		this.customerid = customerid;
 	}
-	public int getWarehouseid() {
+	public Integer getWarehouseid() {
 		return warehouseid;
 	}
-	public void setWarehouseid(int warehouseid) {
+	public void setWarehouseid(Integer warehouseid) {
 		this.warehouseid = warehouseid;
 	}
-	public int getUserid() {
+	public Integer getUserid() {
 		return userid;
 	}
-	public void setUserid(int userid) {
+	public void setUserid(Integer userid) {
 		this.userid = userid;
 	}
-	public int getGoodsid() {
+	public Integer getGoodsid() {
 		return goodsid;
 	}
-	public void setGoodsid(int goodsid) {
+	public void setGoodsid(Integer goodsid) {
 		this.goodsid = goodsid;
 	}
-
+	
 	
 	
 	

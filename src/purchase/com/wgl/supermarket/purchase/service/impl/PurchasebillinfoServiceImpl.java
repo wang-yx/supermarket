@@ -8,10 +8,10 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.wgl.supermarket.purchase.dao.PurchasebillinfoDao;
-import com.wgl.supermarket.purchase.domain.Purchasebillinfo;
-import com.wgl.supermarket.purchase.service.PurchasebillinfoService;
 
 import com.wgl.supermarket.base.util.PageBean;
+import com.wgl.supermarket.purchase.domain.Purchasebillinfo;
+import com.wgl.supermarket.purchase.service.PurchasebillinfoService;
 
 @Service("purchasebillinfoService")
 @Transactional(readOnly = false, propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
